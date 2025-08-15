@@ -1,0 +1,259 @@
+@use "./styles/template" as *;
+@use "./styles/vars" as *;
+
+// .teamplate {
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   width: 1920px;
+//   opacity: 0.3;
+//   pointer-events: none;
+//   z-index: 999;
+// }
+
+.body {
+  font-family: $font;
+}
+button {
+  border: none;
+}
+.header {
+  background-color: $bg-color_dark;
+    min-width: 100%;
+  width: fit-content;
+}
+
+.wrapper {
+width: 1920px;
+  margin: 0 auto;
+}
+.header-content {
+  min-height: 150px;
+  color: $font-color_white;
+  display: flex;
+  gap: 34%;
+  align-items: center;
+}
+
+.container {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+}
+.logo {
+  display: flex;
+  gap: 15%;
+}
+.logo__name {
+  font-size: 28px;
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 0.13em;
+}
+/*.header__nav {
+   display: flex;
+}*/
+.header__list {
+  display: flex;
+  list-style: none;
+  font-size: 22px;
+  gap: 10.4%;
+  letter-spacing: 0.09em;
+}
+.welcome {
+  background-color: black;
+   min-width: 100%;
+  width: fit-content;
+  padding-bottom: 60px;
+}
+.welcom__overlay {
+  height: 750px;
+  background: url(./assets/img/welcome_bg.png);
+  background-position: right;
+  background-repeat: no-repeat;
+}
+.welcome__title {
+  padding-top: 10.5%;
+  @include title_white;
+}
+.welcome__subtitle {
+  padding-top: 1.8%;
+  padding-bottom: 5.2%;
+  font-family: $font;
+  font-weight: 300;
+  font-size: 28px;
+  letter-spacing: 0.07em;
+  color: $font-color_white;
+}
+.welcome__btn {
+  margin-bottom: 18.8%;
+  width: 360px;
+  height: 77px;
+  border-radius: 10px;
+  background-color: $bg-color_red;
+  font-family: $font;
+  font-weight: 300;
+  font-size: 22px;
+letter-spacing: 0.09em;
+text-align: center;
+color: $font-color_white;
+}
+.visiting {
+}
+.visiting__title {
+  padding:5.4% 0 1.5% 0;
+ @include title_gold;
+}
+.visiting__line {
+  height: 3px;
+  background: $font-color_gold;
+}
+.visiting__cards {
+  padding: 5.2% 0;
+  display: flex;
+  row-gap:75px;
+  column-gap: 4.1%;
+  flex-wrap: wrap;
+}
+.visiting__card {
+
+}
+.visiting__card-img {
+}
+.visiting__card-title {
+  padding: 19px 0 10px 0;
+  font-family: $font-title;
+font-weight: 400;
+font-size: 32px;
+letter-spacing: 0.16em;
+text-transform: uppercase;
+color: $font-color_dark;
+}
+.visiting__card-line {
+  margin-bottom: 10px;
+  width: 300px;
+height: 2px;
+background-color: $bg-color_gold;
+}
+.visiting__card-subtitle {
+  font-family: $font;
+font-weight: 100;
+font-size: 22px;
+color: #000;
+}
+.visiting__card-text {
+  padding-top: 10px;
+    font-family: $font;
+font-weight: 100;
+font-size: 18px;
+color: #000;
+}
+.explore {
+  background-color: $bg-color_dark;
+      min-width: 100%;
+    width: fit-content;
+}
+.explore__content {
+  padding: 4% 0 3.6% 0;
+  display: flex;
+  gap:4%
+}
+.explore__info {
+}
+.explore__title {
+  padding-bottom: 2.9%;
+  @include title_white;
+}
+.explore__line {
+  width: 660px;
+  height: 3px;
+  background-color: $bg-color_red;
+}
+.explore__text {
+  padding-top: 11.8%;
+  display: flex;
+  flex-direction: column;
+  gap: 29px;
+}
+.explore__paragraph {
+  font-family: $font;
+  font-weight: 300;
+  font-size: 21px;
+  line-height: 175%;
+  color: $font-color_white;
+
+}
+.explore__img-slider {
+  padding-top: 1%;
+}
+.explore__img-after {
+}
+.video {
+}
+.conteiner {
+}
+.video__info {
+  padding: 5.5% 0 4% 0;
+  display: flex;
+  gap: 8%;
+}
+.video__title {
+  @include title_gold;
+}
+.video__text {
+  max-width: 720px;
+  font-family: $font;
+font-weight: 300;
+font-size: 22px;
+line-height: 175%;
+color: $font-color_dark;
+}
+.video__main-container {
+  max-width: 1440px;
+  width: 100%;
+  height: 749px;
+  padding-top: 0.9%
+}
+.video__main {
+ width: 100%;
+ height: 100%;
+ object-fit: cover;
+}
+.video__slider {
+  padding-top: 2.75%;
+  display: flex;
+  gap:3%
+}
+.video__player {
+  width: 100%;
+  max-width: 452px;
+   video {
+    height: 254px;
+    width: 100%;
+  }
+}
+.slider__dots {
+  padding: 36px 0;
+  display: flex;
+  justify-content: center;
+  gap:20px;
+}
+.dot {
+  background-color: gray;
+  border-radius: 100%;
+  height: 12px;
+  width: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.active {
+   background-color: black;
+}
+.video__arrow {
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+
+
+

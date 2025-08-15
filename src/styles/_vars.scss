@@ -1,0 +1,32 @@
+$bg-color_dark: #030303;
+$bg-color_white: #ffff;
+$bg-color_red: #710707;
+$bg-color_gold: #9d8665;
+
+$font-color_dark: #030303;
+$font-color_white: #ffff;
+$font-color_red: #710707;
+$font-color_gold: #9d8665;
+
+$font: "roboto", sans-serif;
+$font-title: "forum", sans-serif;
+
+@mixin title_gold {
+  font-family: $font-title;
+  font-weight: 400;
+  font-size: 80px;
+  line-height: 112%;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: $font-color_gold;
+}
+@mixin title_white {
+  font-family: $font-title;
+  font-weight: 400;
+  font-size: 80px;
+  line-height: 112%;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: $font-color_white;
+}
+

@@ -23,4 +23,5 @@ dist-ssr
 *.sln
 *.sw?
 
+/src/assets/teamplates
 src/main.js
